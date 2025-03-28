@@ -30,8 +30,18 @@ let biciLeggera= bicicletta[0]
 
 for (let index = 0; index < bicicletta.length; index++) {
      if(bicicletta[index].peso < biciLeggera.peso){
-        biciLeggera === bicicletta[index]
+        biciLeggera = bicicletta[index]
      }
     
 }
+// stampo in console la bici più leggera
 console.log("bici più leggera è",biciLeggera)
+
+// esercizio due 
+
+const calcio =[
+    {squadra:"juventus",
+        punti:"0",
+        falliSubiti:"0",
+    }
+]
