@@ -63,14 +63,23 @@ const squadre =[
 // genero la funzione che mi genera numri casuali
 
 function getRandomNum(min,max){
-    return Math.floor(Math.random()*(min-max+1))+1;
+    return Math.floor(Math.random()*(max-min+1))+min;
 }
 
 // assegno numeri casuali per i punti e per i falli
 squadre.forEach(squadra => {
-    squadra.punti = getRandomInt(0, 50);
-    squadra.falli = getRandomInt(0, 50);   
+    squadra.punti = getRandomNum(0, 50);
+    squadra.falli = getRandomNum(0, 50);   
 });
+
+console.log("squadre con punti e falli subuti",squadre)
+
+let FalliDelleSquadre = squadre.map(squadra =>({
+    nome: squadra.squadra,
+    falli: squadra.Fallisubiti,
+}))
+
+console.log(  "array con nomi e falli",FalliDelleSquadre)
 
 
 
