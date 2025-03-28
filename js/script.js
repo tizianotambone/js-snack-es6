@@ -69,14 +69,14 @@ function getRandomNum(min,max){
 // assegno numeri casuali per i punti e per i falli
 squadre.forEach(squadra => {
     squadra.punti = getRandomNum(0, 50);
-    squadra.falli = getRandomNum(0, 50);   
+    squadra.FalliSubiti = getRandomNum(0, 50);   
 });
 
 console.log("squadre con punti e falli subuti",squadre)
 
 let FalliDelleSquadre = squadre.map(squadra =>({
     nome: squadra.squadra,
-    falli: squadra.Fallisubiti,
+    falli: squadra.FalliSubiti,
 }))
 
 console.log(  "array con nomi e falli",FalliDelleSquadre)
