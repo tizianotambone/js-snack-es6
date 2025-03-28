@@ -48,20 +48,25 @@ const squadre =[
         punti:0,
         falliSubiti:0,
     },
-    {
-        squadra:"milan"
+    {squadra:"atalanta",
         punti:0,
         falliSubiti:0,
     },
-    {
-        squadra:"atalanta"
+    {squadra:"milan",
         punti:0,
         falliSubiti:0,
-    }
+    },
+    
+    
 ]
 
 // genero la funzione che mi genera numri casuali
-function getRandomNuber(min, max ){
-    return Math.floor(Math.random()*(max-min+1))+min;
 
+function getRandomNum(min,max){
+    return Math.floor(Math.random()*(min-max+1))+1;
 }
+
+// assegno numeri casuali a falli e punti
+squa
+
+
