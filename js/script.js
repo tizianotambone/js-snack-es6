@@ -39,9 +39,29 @@ console.log("bici più leggera è",biciLeggera)
 
 // esercizio due 
 
-const calcio =[
+const squadre =[
     {squadra:"juventus",
-        punti:"0",
-        falliSubiti:"0",
+        punti:0,
+        falliSubiti:0,
+    },
+    {squadra:"inter",
+        punti:0,
+        falliSubiti:0,
+    },
+    {
+        squadra:"milan"
+        punti:0,
+        falliSubiti:0,
+    },
+    {
+        squadra:"atalanta"
+        punti:0,
+        falliSubiti:0,
     }
 ]
+
+// genero la funzione che mi genera numri casuali
+function getRandomNuber(min, max ){
+    return Math.floor(Math.random()*(max-min+1))+min;
+
+}
